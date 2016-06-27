@@ -507,6 +507,15 @@ static const CGFloat kLayoutImageScrollViewAnimationDuration = 0.25;
     }
 }
 
+- (void)setMinOutputSize:(CGSize)minOutputSize
+{
+    if (!CGSizeEqualToSize(_minOutputSize, minOutputSize)) {
+        _minOutputSize = minOutputSize;
+        
+        self.imageScrollView.minOutputSize = minOutputSize;
+    }
+}
+
 - (void)setZoomScale:(CGFloat)zoomScale
 {
     self.imageScrollView.zoomScale = zoomScale;

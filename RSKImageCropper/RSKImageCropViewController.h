@@ -162,6 +162,11 @@ typedef NS_ENUM(NSUInteger, RSKImageCropMode) {
  */
 @property (assign, getter=isRotationEnabled, nonatomic) BOOL rotationEnabled;
 
+/**
+ Minimum size allowed for output
+ */
+@property (assign, nonatomic) CGSize minOutputSize;
+
 /// -------------------------------
 /// @name Accessing the UI Elements
 /// -------------------------------
